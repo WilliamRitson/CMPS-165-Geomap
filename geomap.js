@@ -71,7 +71,7 @@ function addScale(highest) {
 }
 
 // Draw the projection
-Promise.all([d3.tsv("poland-provinces.tsv"), d3.json("POL_adm1.json")])
+Promise.all([d3.tsv("datafile.tsv"), d3.json("Poland.json")])
   .catch(console.error)
   .then(data => {
     let provinceData = data[0];
